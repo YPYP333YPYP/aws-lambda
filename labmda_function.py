@@ -99,17 +99,3 @@ def lambda_handler(event, context):
             })
         }
 
-
-if __name__ == "__main__":
-    # Lambda 함수에 전달될 event 객체 모방
-    test_event = {
-        'queryStringParameters': {
-            'search': '주식'
-        }
-    }
-
-    # Lambda 함수 호출
-    result = lambda_handler(test_event, None)
-
-    # 결과 출력
-    print(json.dumps(result, ensure_ascii=False, indent=2))
