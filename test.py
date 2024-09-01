@@ -7,9 +7,7 @@ url = 'https://lrib48jimi.execute-api.ap-northeast-2.amazonaws.com/default/test'
 params = {
     'search': '주식'
 }
-# params = {
-#   "query": "주식"
-# }
+
 # GET 요청 보내기
 response = requests.get(url, params=params)
 
