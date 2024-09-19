@@ -60,7 +60,7 @@ def summarize_article(article, query):
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             messages=[
                 {"role": "system", "content": f"{query}를 핵심으로 생각하면서 뉴스 기사를 200자 이내로 요약해"},
                 {"role": "user", "content": article}
